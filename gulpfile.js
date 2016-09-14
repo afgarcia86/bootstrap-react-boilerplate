@@ -14,13 +14,23 @@ var buffer = require('vinyl-buffer');
 
 var browserSync = require('browser-sync');
 var reload = browserSync.reload;
-var historyApiFallback = require('connect-history-api-fallback')
+var historyApiFallback = require('connect-history-api-fallback');
 
+var argv = require('yargs').argv;
+
+/*
+  Set up env configuration file
+*/
+gulp.task('config', function() {
+  if(argv.env === 'prod')
+    return gulp.src('config-production.js').pipe(rename('config.js')).pipe(gulp.dest('scripts/components/shared'));
+  else
+    return gulp.src('config.js').pipe(gulp.dest('scripts/components/shared'));
+});
 
 /*
   Styles Task
 */
-
 gulp.task('sass', function () {
   // Compiles CSS
   gulp.src('./assets/sass/**.scss')
@@ -93,7 +103,7 @@ gulp.task('scripts', function() {
 });
 
 // run 'scripts' task first, then watch for future changes
-gulp.task('default', ['images','sass','scripts','browser-sync'], function() {
+gulp.task('default', ['config', 'images','sass','scripts','browser-sync'], function() {
   gulp.watch('./assets/sass/**/*', ['sass']); // gulp watch for stylus changes
   return buildScript('main.js', true); // browserify watch for JS changes
 });

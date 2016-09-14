@@ -25,8 +25,8 @@ This will install the packages listed in the package.json file.
 
 This uses a gulpfile that uses browserSync to watch for changes to the JS and SASS to update the browser while you work.
 
-`npm start`
+`gulp`
 
 ## Deployment
 
-TBD
+`gulp --evn=prod`
