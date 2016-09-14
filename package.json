@@ -1,0 +1,48 @@
+{
+  "name": "creaves-cms",
+  "version": "1.0.0",
+  "private": true,
+  "main": "index.js",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "babel": "~6.5.2",
+    "babel-plugin-transform-decorators-legacy": "^1.3.4",
+    "babel-preset-es2015": "~6.13.2",
+    "babel-preset-react": "~6.11.1",
+    "babel-preset-stage-0": "~6.5.0",
+    "babelify": "~7.3.0",
+    "browser-sync": "~2.14.0",
+    "browserify": "~13.1.0",
+    "connect-history-api-fallback": "~1.3.0",
+    "formsy-react": "~0.18.1",
+    "formsy-react-components": "afgarcia86/formsy-react-components",
+    "gulp": "~3.9.1",
+    "gulp-autoprefixer": "~3.1.0",
+    "gulp-notify": " ~2.2.0",
+    "gulp-rename": "~1.2.2",
+    "gulp-sass": "~2.3.2",
+    "gulp-uglify": "~2.0.0",
+    "gulp-util": "~3.0.7",
+    "moment": "~2.14.1",
+    "react": "~15.3.0",
+    "react-dom": "~15.3.0",
+    "react-helmet": "^3.1.0",
+    "react-mixin": "~2.0.2",
+    "react-router": "~2.6.1",
+    "superagent": "~2.1.0",
+    "vinyl-buffer": "~1.0.0",
+    "vinyl-source-stream": "~1.1.0",
+    "watchify": "~3.7.0"
+  },
+  "engines": {
+    "npm": "~3.10.5"
+  },
+  "scripts": {
+    "start": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://bitbucket.org/craves/craves-cms"
+  }
+}

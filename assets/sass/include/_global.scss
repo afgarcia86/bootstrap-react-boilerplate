@@ -1,0 +1,49 @@
+.text-white{ color: #fff; }
+
+.display-table {
+  display: table;
+  width: 100%;
+  height: 100%; /* For at least Firefox */
+  min-height: 100%;
+}
+.display-table-cell {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+h1, h3, h3, h4{
+  font-family: 300;
+}
+
+::-webkit-input-placeholder{
+  color: #777;
+  text-transform: uppercase;
+  font-size: 11px;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+::-moz-placeholder{
+  color: #777;
+  text-transform: uppercase;
+  font-size: 11px;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+:-ms-input-placeholder{
+  color: #777;
+  text-transform: uppercase;
+  font-size: 11px;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+:-moz-placeholder {
+  color: #777;
+  text-transform: uppercase;
+  font-size: 11px;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+
+.close {
+  font-size: 1.3rem;
+}

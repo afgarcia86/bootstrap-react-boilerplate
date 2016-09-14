@@ -1,0 +1,25 @@
+html.account-form{
+
+  body{
+    // background-color: $brand-primary;
+  }
+
+  .form-control{
+    height: 50px;
+    border-color: #fff;
+  }
+
+  .custom-select{
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+    border-color: #fff;
+  }
+
+  .btn{
+    height: 50px;
+    font-size: 11px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+}
