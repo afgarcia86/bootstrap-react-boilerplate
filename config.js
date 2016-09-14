@@ -1,4 +1,7 @@
-export const config = {
+let config =  {
   env: 'development',
-  apiUrl: 'http://www.andresthegiant.com'
-};
+  parseAppId: 'craves',
+  parseServerURL: 'http://localhost:1337/parse'
+}
+
+export default config;
